@@ -1,122 +1,122 @@
 # 0. Introduction
-#### 0.1. Programming – absolute basics
-* 0.1.1. How does a computer program work?
-* 0.1.2. Natural languages vs. programming languages
-* 0.1.3. Compilations vs. interpretation
+### 0.1. Programming – absolute basics
+#### 0.1.1. How does a computer program work?
+#### 0.1.2. Natural languages vs. programming languages
+#### 0.1.3. Compilations vs. interpretation
 
-#### 0.2. Python – a tool, not a reptile
-* 0.2.1. What is Python?
-* 0.2.2. Who is Python's creator?
-* 0.2.4. Why Python?
-* 0.2.5. Why not Python?
+### 0.2. Python – a tool, not a reptile
+#### 0.2.1. What is Python?
+#### 0.2.2. Who is Python's creator?
+#### 0.2.4. Why Python?
+#### 0.2.5. Why not Python?
 
-#### 0.3. There is more than one Python
-* 0.3.1. Python 2 vs. Python 3
-* 0.3.2. Python aka Cpython
-* 0.3.3. Cython
-* 0.3.4. Jython
-* 0.3.5. PyPy and Rpython
+### 0.3. There is more than one Python
+#### 0.3.1. Python 2 vs. Python 3
+#### 0.3.2. Python aka Cpython
+#### 0.3.3. Cython
+#### 0.3.4. Jython
+#### 0.3.5. PyPy and Rpython
 
-#### 0.4. Begin your Python journey
-* 0.4.1. How to get Python and how to get to use it
-* 0.4.4. How to write and run your very first Python program
-* 0.4.8. How to spoil and fix your code
+### 0.4. Begin your Python journey
+#### 0.4.1. How to get Python and how to get to use it
+#### 0.4.4. How to write and run your very first Python program
+#### 0.4.8. How to spoil and fix your code
 
-#### 0.5. Edube Sandbox and Labs
+### 0.5. Edube Sandbox and Labs
 
 
-PART 1: BASICS
-# 1. Basics I
-## 1.1 Your first program
-1.1.1 Your first program
-1.1.2 The print() function – how the computer talks to you
-1.1.9 The print() function – formatting the output
+#PART 1: BASICS
+## 1. Basics I
+### 1.1 Your first program
+#### 1.1.1 Your first program
+#### 1.1.2 The print() function – how the computer talks to you
+#### 1.1.9 The print() function – formatting the output
 
-## 1.2 Python literals
-1.2.1 Literals – what they are anyway?
-1.2.2 Literals – integers
-1.2.8 Literals – floats
-1.2.15 Literals – strings
-1.2.22 Literals – Boolean values
+### 1.2 Python literals
+#### 1.2.1 Literals – what they are anyway?
+#### 1.2.2 Literals – integers
+#### 1.2.8 Literals – floats
+#### 1.2.15 Literals – strings
+#### 1.2.22 Literals – Boolean values
 
-## 1.3 Operators – data manipulation tools
-1.3.1 Operators and expressions
-1.3.2 Arithmetic operators
-1.3.24 Operators and their priorities
-1.3.25 Operators and their bindings
+### 1.3 Operators – data manipulation tools
+#### 1.3.1 Operators and expressions
+#### 1.3.2 Arithmetic operators
+#### 1.3.24 Operators and their priorities
+#### 1.3.25 Operators and their bindings
 
-## 1.4 Variables – data-shaped boxes
-1.4.1 Variables – how to name them
-1.4.2 Variable names vs. Python keywords
-1.4.3 How to assign a variable
-1.4.10 How to comment your code
-1.4.11 Shortcut operators
+### 1.4 Variables – data-shaped boxes
+#### 1.4.1 Variables – how to name them
+#### 1.4.2 Variable names vs. Python keywords
+#### 1.4.3 How to assign a variable
+#### 1.4.10 How to comment your code
+#### 1.4.11 Shortcut operators
 
-1.5 How to talk to computer?
-1.5.1 Output vs. input
-1.5.2 How to input data with the input() function
-1.5.6 How to convert strings into numbers
-1.5.7 Some simple interactive programs
-1.5.7 String operators
-1.5.16 How to convert numbers into strings
+### 1.5 How to talk to computer?
+#### 1.5.1 Output vs. input
+#### 1.5.2 How to input data with the input() function
+#### 1.5.6 How to convert strings into numbers
+#### 1.5.7 Some simple interactive programs
+#### 1.5.7 String operators
+#### 1.5.16 How to convert numbers into strings
 
-2. Basics II
-2.1 Making decisions in Python
-2.1.1 How to ask questions and how to get answers
-2.1.2 Relational operators
-2.1.11 Making use of the answers
-2.1.13 Conditions and conditional execution – the if statements
-2.1.16 How indentation makes the code
-2.1.17 The more conditional execution – if-else statements
-2.1.21 The elif clause
-2.1.22 Some simple examples
+## 2. Basics II
+### 2.1 Making decisions in Python
+#### 2.1.1 How to ask questions and how to get answers
+#### 2.1.2 Relational operators
+#### 2.1.11 Making use of the answers
+#### 2.1.13 Conditions and conditional execution – the if statements
+#### 2.1.16 How indentation makes the code
+#### 2.1.17 The more conditional execution – if-else statements
+#### 2.1.21 The elif clause
+#### 2.1.22 Some simple examples
 
-2.2 Python's loops
-2.2.1 Looping your code with while
-2.2.12 Looping your code with for
-2.2.24 Controlling your loops with break and continue
+### 2.2 Python's loops
+#### 2.2.1 Looping your code with while
+#### 2.2.12 Looping your code with for
+#### 2.2.24 Controlling your loops with break and continue
 
-2.3 Logic and bit operations in Python
-2.3.1 Computer logic and its operators
-2.3.8 Logical values vs. single bits
-2.3.9 Bitwise operators
-2.3.15 How to deal with single bits
+### 2.3 Logic and bit operations in Python
+#### 2.3.1 Computer logic and its operators
+#### 2.3.8 Logical values vs. single bits
+#### 2.3.9 Bitwise operators
+#### 2.3.15 How to deal with single bits
 
-2.4 Lists – collections of data
-2.4.1 Lists – why do we need them so much?
-2.4.2 How to create a list
-2.4.3 How to use a list
-2.4.8 Removing elements from a list
-2.4.9 How not to use a list
-2.4.12 List methods – methods vs. functions
-2.4.14 Adding elements to lists
-2.4.22 Making use of lists
-2.4.23 The second face of the for loop
-2.3.24 Lists in action
+### 2.4 Lists – collections of data
+#### 2.4.1 Lists – why do we need them so much?
+#### 2.4.2 How to create a list
+#### 2.4.3 How to use a list
+#### 2.4.8 Removing elements from a list
+#### 2.4.9 How not to use a list
+#### 2.4.12 List methods – methods vs. functions
+#### 2.4.14 Adding elements to lists
+#### 2.4.22 Making use of lists
+#### 2.4.23 The second face of the for loop
+#### 2.3.24 Lists in action
 
-2.5 Sorting simple lists – the bubble sort algorithm
+### 2.5 Sorting simple lists – the bubble sort algorithm
 
-2.6 Lists – some more details
-2.6.1. How lists are stored
-2.6.2. Slices – the powerful tools
-2.6.14. The in and not in operators
+### 2.6 Lists – some more details
+#### 2.6.1. How lists are stored
+#### 2.6.2. Slices – the powerful tools
+#### 2.6.14. The in and not in operators
 
-2.7 Lists in advanced applications
-2.7.1 Lists in lists
-2.7.2 The list comprehension: why and how
-2.7.3 Lists in lists – matrices
-2.7.10 Lists in lists – 3rd dimension
+### 2.7 Lists in advanced applications
+#### 2.7.1 Lists in lists
+#### 2.7.2 The list comprehension: why and how
+#### 2.7.3 Lists in lists – matrices
+#### 2.7.10 Lists in lists – 3rd dimension
 
-3. Basics III
-3.1 Writing functions in Python
-3.1.1 Functions: why do we need them?
-3.1.5 Where do functions come from?
-3.1.6 Your first function
+## 3. Basics III
+### 3.1 Writing functions in Python
+#### 3.1.1 Functions: why do we need them?
+#### 3.1.5 Where do functions come from?
+#### 3.1.6 Your first function
 
-3.2 How functions communicate with their environment
-3.2.1 Parametrized functions
-3.2.2 How to define and use function parameters
-3.2.6 What is shadowing?
+### 3.2 How functions communicate with their environment
+#### 3.2.1 Parametrized functions
+#### 3.2.2 How to define and use function parameters
+#### 3.2.6 What is shadowing?
 3.2.7 Positional arguments
 3.2.12 Keyword arguments
 3.2.14 Mixed arguments
