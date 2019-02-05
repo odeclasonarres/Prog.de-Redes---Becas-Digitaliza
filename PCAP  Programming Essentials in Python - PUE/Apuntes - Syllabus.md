@@ -197,155 +197,152 @@ There are very few languages that can be both compiled and interpreted. Usually,
 #### 2.7.10 Lists in lists – 3rd dimension
 
 ## 3. Basics III
-3.1 Writing functions in Python
-3.1.1 Functions: why do we need them?
-3.1.5 Where do functions come from?
-3.1.6 Your first function
+### 3.1 Writing functions in Python
+#### 3.1.1 Functions: why do we need them?
+#### 3.1.5 Where do functions come from?
+#### 3.1.6 Your first function
 
-3.2 How functions communicate with their environment
-3.2.1 Parametrized functions
-3.2.2 How to define and use function parameters
-3.2.6 What is shadowing?
-3.2.7 Positional arguments
-3.2.12 Keyword arguments
-3.2.14 Mixed arguments
-3.2.19 Setting parameters' default values
+### 3.2 How functions communicate with their environment
+#### 3.2.1 Parametrized functions
+#### 3.2.2 How to define and use function parameters
+#### 3.2.6 What is shadowing?
+#### 3.2.7 Positional arguments
+#### 3.2.12 Keyword arguments
+#### 3.2.14 Mixed arguments
+#### 3.2.19 Setting parameters' default values
 
-3.3 Returning a result from a function
-3.3.1 A function's effects and results – the return statement
-3.3.4 Returning a value
-3.3.8 The None value
-3.3.9 Returning the non-None value
-3.3.11 Argument vs. parameter compatibility
-3.3.12 A list as a function's result
+### 3.3 Returning a result from a function
+#### 3.3.1 A function's effects and results – the return statement
+#### 3.3.4 Returning a value
+#### 3.3.8 The None value
+#### 3.3.9 Returning the non-None value
+#### 3.3.11 Argument vs. parameter compatibility
+#### 3.3.12 A list as a function's result
 
-3.4 Scopes in Python
-3.4.1 Functions and scopes
-3.4.2 How do scopes work?
-3.4.5 How to make a variable global
-3.4.6 How the parameters interact with their arguments
+### 3.4 Scopes in Python
+#### 3.4.1 Functions and scopes
+#### 3.4.2 How do scopes work?
+#### 3.4.5 How to make a variable global
+#### 3.4.6 How the parameters interact with their arguments
 
-3.5 Creating functions
-3.5.1 Some exercises with designing and writing functions
-3.5.22 Recursion – how to make a function more powerful?
+### 3.5 Creating functions
+#### 3.5.1 Some exercises with designing and writing functions
+#### 3.5.22 Recursion – how to make a function more powerful?
 
-3.6 Tuples and dictionaries
-3.6.1 Sequence types and mutability
-3.6.2 What is a tuple?
-3.6.3 How to create a tuple
-3.6.5 How to use a tuple
-3.6.11 What is a dictionary?
-3.6.12 How to make a dictionary
-3.6.13 How to use a dictionary
-3.6.21 How a dictionary and a tuple can work together
+### 3.6 Tuples and dictionaries
+#### 3.6.1 Sequence types and mutability
+#### 3.6.2 What is a tuple?
+#### 3.6.3 How to create a tuple
+#### 3.6.5 How to use a tuple
+#### 3.6.11 What is a dictionary?
+#### 3.6.12 How to make a dictionary
+#### 3.6.13 How to use a dictionary
+#### 3.6.21 How a dictionary and a tuple can work together
 
+# PART 2: INTERMEDIATE
+## 4. Intermediate I
+### 4.1 Using modules
+#### 4.1.1 What is a module?
+#### 4.1.2 How to make use of a module?
+#### 4.1.4 Importing a module
 
-PART 2: INTERMEDIATE
+### 4.2. Some useful modules
+#### 4.2.1 Working with standard modules
+#### 4.2.4 Some functions from the math module
+#### 4.2.9 Some functions from the random module
+#### 4.2.15 Some functions from the platform module
 
-4. Intermediate I
-4.1 Using modules
-4.1 Using modules
-4.1.1 What is a module?
-4.1.2 How to make use of a module?
-4.1.4 Importing a module
+### 4.3 What is a package?
+#### 4.3.1 Modules and packages
+#### 4.3.2 Your first module
+#### 4.3.14 Your first package
 
-4.2. Some useful modules
-4.2.1 Working with standard modules
-4.2.4 Some functions from the math module
-4.2.9 Some functions from the random module
-4.2.15 Some functions from the platform module
+### 4.4 Errors – a programmer's daily bread
+#### 4.4.1 Errors, failures, and other plagues
+#### 4.4.2 Exceptions
 
-4.3 What is a package?
-4.3.1 Modules and packages
-4.3.2 Your first module
-4.3.14 Your first package
+### 4.5 The anatomy of an exception
 
-4.4 Errors – a programmer's daily bread
-4.4.1 Errors, failures, and other plagues
-4.4.2 Exceptions
+### 4.6 Some of the most useful exceptions
 
-4.5 The anatomy of an exception
+### 4.7 Characters and strings vs. computers
 
-4.6 Some of the most useful exceptions
+### 4.8 The nature of Python's strings
 
-4.7 Characters and strings vs. computers
+### 4.9 String methods
 
-4.8 The nature of Python's strings
+### 4.10 Strings in action
+#### 4.10.1 Comparing strings
+#### 4.10.7 Sorting strings, and not only strings
+#### 4.10.10 Strings vs. numbers
 
-4.9 String methods
+### 4.11 Four simple programs
+#### 4.11.1 Caesar’s cipher – the coder
+#### 4.11.2 Caesar’s cipher – the decoder
+#### 4.11.3 Extracting numbers from a line of text
+#### 4.11.4 Checking the IBAN
 
-4.10 Strings in action
-4.10.1 Comparing strings
-4.10.7 Sorting strings, and not only strings
-4.10.10 Strings vs. numbers
+## 5. Intermediate II
+### 5.1 Basic concepts of object programming
+#### 5.1.1 What is an object?
+#### 5.1.5 The object – what is it again?
+#### 5.1.7 What does an object have?
+#### 5.1.8 Your first class
 
-4.11 Four simple programs
-4.11.1 Caesar’s cipher – the coder
-4.11.2 Caesar’s cipher – the decoder
-4.11.3 Extracting numbers from a line of text
-4.11.4 Checking the IBAN
+### 5.2 A short journey from the procedural to the object approach
+#### 5.2.1 What is a stack?
+#### 5.2.2 The stack – a procedural approach
+#### 5.2.7 The stack from scratch
 
-5. Intermediate II
-5.1 Basic concepts of object programming
-5.1.1 What is an object?
-5.1.5 The object – what is it again?
-5.1.7 What does an object have?
-5.1.8 Your first class
+### 5.3 Properties
+#### 5.3.1 Properties in detail
+#### 5.3.2 Instance variables
+#### 5.3.4 Class variables
+#### 5.3.8 Checking an attribute's existence
 
-5.2 A short journey from the procedural to the object approach
-5.2.1 What is a stack?
-5.2.2 The stack – a procedural approach
-5.2.7 The stack from scratch
+### 5.4 Methods
+#### 5.4.1 Methods in detail
+#### 5.4.a The inner life of classes and objects
+#### 5.4.b Reflection and introspection – two names of the same phenomenon
+#### 5.4.c Investigating classes – what can we find out about them?
 
-5.3 Properties
-5.3.1 Properties in detail
-5.3.2 Instance variables
-5.3.4 Class variables
-5.3.8 Checking an attribute's existence
+### 5.5 Inheritance – one of object programming foundations
+#### 5.5.1 Inheritance – why and how
+#### 5.5.a How Python finds properties and methods
+#### 5.5.b How to build a hierarchy of classes
+#### 5.5.c Inheritance vs. composition
+#### 5.5.d Single inheritance vs. multiple inheritance
+#### 5.5.e Diamonds and why you don't want them
 
-5.4 Methods
-5.4.1 Methods in detail
-5.4.a The inner life of classes and objects
-5.4.b Reflection and introspection – two names of the same phenomenon
-5.4.c Investigating classes – what can we find out about them?
+### 5.6 Exceptions once again
+#### 5.6.1 Exceptions are classes
+#### 5.6.a Detailed anatomy of an exception
+#### 5.6.b How to create your own exception
+#### 5.6.c How to use your own exception
 
-5.5 Inheritance – one of object programming foundations
-5.5.1 Inheritance – why and how
-5.5.a How Python finds properties and methods
-5.5.b How to build a hierarchy of classes
-5.5.c Inheritance vs. composition
-5.5.d Single inheritance vs. multiple inheritance
-5.5.e Diamonds and why you don't want them
+### 5.7 Generators and closures
+#### 5.7.1 Generators – where to find them
+#### 5.7.a The yield statement
+#### 5.7.b How to build your own generator
+#### 5.7.c More about list comprehensions
+#### 5.7.d The lambda function
+#### 5.7.e How and when to use lambdas
 
-5.6 Exceptions once again
-5.6.1 Exceptions are classes
-5.6.a Detailed anatomy of an exception
-5.6.b How to create your own exception
-5.6.c How to use your own exception
+### 5.8 Processing files
+#### 5.8.1 Accessing files from Python code
+#### 5.8.2 File names
+#### 5.8.6 File streams
+#### 5.8.9 File handles
+#### 5.8.13 Opening the streams
+#### 5.8.18 Selecting text and binary modes
+#### 5.8.19 Opening the stream for the first time
+#### 5.8.20 Pre-opened streams
+#### 5.8.24 Closing streams
+#### 5.8.26 Diagnosing stream problems
 
-5.7 Generators and closures
-5.7.1 Generators – where to find them
-5.7.a The yield statement
-5.7.b How to build your own generator
-5.7.c More about list comprehensions
-5.7.d The lambda function
-5.7.e How and when to use lambdas
-
-5.8 Processing files
-5.8.1 Accessing files from Python code
-5.8.2 File names
-5.8.6 File streams
-5.8.9 File handles
-5.8.13 Opening the streams
-5.8.18 Selecting text and binary modes
-5.8.19 Opening the stream for the first time
-5.8.20 Pre-opened streams
-5.8.24 Closing streams
-5.8.26 Diagnosing stream problems
-
-5.9 Working with real files
-5.9.1 Dealing with text files
-5.9.6 How to work with binary files
-5.9.7 How to read bytes from the stream
-5.9.a How to write bytes from the stream
-5.9.b Copying files – a simple, but functional tool
+### 5.9 Working with real files
+#### 5.9.1 Dealing with text files
+#### 5.9.6 How to work with binary files
+#### 5.9.7 How to read bytes from the stream
+#### 5.9.a How to write bytes from the stream
+#### 5.9.b Copying files – a simple, but functional tool
