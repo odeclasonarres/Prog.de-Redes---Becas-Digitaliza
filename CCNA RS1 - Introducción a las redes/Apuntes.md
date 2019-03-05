@@ -86,3 +86,53 @@ Características básicas que las arquitecturas necesitan para cumplir con las e
 
 #### 4. El cambiante entorno de la redes
 ###### Tendencias de redes
+ - BYOD(Bring Your Own Device): significa que se puede usar cualquier dispositivo, de cualquier persona, en cualquier lugar.
+ - Colaboración en línea:
+ - Videollamadas
+ - Computación en la nube:
+
+###### Tecnologías de red para el hogar
+ - Hogar inteligente
+ - Redes por línea eléctrica
+ - Red inalámbrica:
+  - WISP
+  - Banda ancha Inalámbrica
+
+###### Seguridad de la red
+La seguridad es una parte integral de las redes; debe tener en cuenta el entorno, las herramientas y los requisitos. Debe poder proteger los datos y, al mismo tiempo, mantener la calidad de servicio que se espera de la red. Incluye protocolos, tecnologías, dispositivos, herramientas y técnicas para proteger los datos y mitigar amenazas.
+ - Amenazas de seguridad:
+  - Externas
+    - Virus, gusanos y caballos de Troya
+    - Spyware y adware
+    - Ataques de hora cero
+    - Ataques de hackers
+    - Ataques por denegación de servicio
+    - Interceptación y robo de datos
+  - Internas
+
+**Soluciones de seguridad**:
+la seguridad debe implementarse en varias capas, y debe utilizarse más de una solución de seguridad
+ - Antivirus y antispyware
+ - Filtrado de firewall
+ - Sistemas de firewall dedicados
+ - Listas de control de acceso (ACL)
+ - Sistemas de prevención de intrusión (IPS)
+ - Redes privadas virtuales (VPN)
+
+###### Arquitectura de red
+La arquitectura de red se refiere a los dispositivos, las conexiones y los productos que se integran para admitir las tecnologías y aplicaciones necesarias.
+
+## 2. Configuración de un sistema operativo de red
+El Sistema operativo Internetwork (IOS) de Cisco es un término genérico para la colección de sistemas operativos de red que se utilizan en los dispositivos de red Cisco. Cisco IOS se utiliza en la mayoría de los dispositivos Cisco, independientemente del tamaño o el tipo de dispositivo. Este curso se centrará principalmente en Cisco IOS, versión 15.x.
+
+### 1.Entrenamiento intensivo para IOS
+La parte del SO que interactúa directamente con el hardware de la computadora se conoce como el Núcleo. La parte que interactúa con las aplicaciones y el usuario se conoce como Shell. El usuario puede interactuar con el shell mediante la interfaz de línea de comandos (CLI) o la interfaz gráfica del usuario (GUI). Se suele acceder a los dispositivos de red mediante una CLI.
+
+**Métodos de acceso**:
+ - Consola
+ - SSH
+ - Telnet
+
+**Modos del comando primario**: Como característica de seguridad, hay 2 modos de acceso de administración:
+ - Modo de ejecución de usuario: Permite solo una cantidad limitada de comandos de monitoreo básicos, pero no permite la ejecución de ningún comando que podría cambiar la configuración del dispositivo. La petición de entrada en la terminal termina con el símbolo '>'.
+ - Modo de ejecución privilegiado: Permite acceso a todos los comandos y funciones. La petición de entrada que termina con el símbolo '#'.

@@ -1,0 +1,6 @@
+#### Certificación CCENT y CCNA
+ La certificación de Cisco Certified Network Associate (CCNA) Routing and Switching demuestra que tiene conocimiento de las tecnologías fundamentales y asegura que sea relevante con conjuntos de habilidades necesarias para la adopción de tecnologías de última generación.
+
+Para obtener la certificación CCNA Routing and Switching, debe aprobar dos exámenes o un examen compuesto. Los candidatos que aprueben el primer examen reúnen los requisitos para ser llamado Cisco Certified Entry Network Technician (CCENT). El examen CCENT evalúa los conocimientos y las habilidades del candidato relacionados con los principios básicos de redes, las tecnología de switching LAN, las tecnologías de routing, los servicios de infraestructura y el mantenimiento de infraestructura. El segundo examen CCNA evalúa los conocimientos y las habilidades del candidato relacionados con tecnologías de routing IPv4 e IPv6 y las tecnologías WAN, así como tecnologías más avanzadas en el switching LAN, servicios de infraestructura y mantenimiento de infraestructura.
+
+Este curso ayuda a crear el marco para los conceptos de redes y las configuraciones básicas de switching y routing, además de ser un inicio en su camino para obtener la certificación CCENT y CCNA.
