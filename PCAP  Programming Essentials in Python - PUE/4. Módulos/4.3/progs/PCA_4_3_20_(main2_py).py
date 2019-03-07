@@ -1,6 +1,6 @@
 from sys import path
 
-path.append('..\\packages')
+path.append('../paquetes')
 
 import extra.iota
 

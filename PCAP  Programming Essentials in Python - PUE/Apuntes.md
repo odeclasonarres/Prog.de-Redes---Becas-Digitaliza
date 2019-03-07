@@ -48,3 +48,16 @@ dir(modulo)
 from sys import path
 path.append('..\\modulos')
 ~~~
+
+##### Errores
+Para capturar errores usaremos excepciones. Tipos de excepciones
+~~~
+ZeroDivisionError: division by zero
+IndexError: list index out of range
+
+~~~
+
+Try-catch
+~~~
+
+~~~
