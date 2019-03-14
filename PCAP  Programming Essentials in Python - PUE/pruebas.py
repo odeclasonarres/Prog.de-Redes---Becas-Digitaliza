@@ -1,2 +1,4 @@
-list=[]
-x=list[0]
+x="pito"
+y="pato"
+x +=y
+print(x)

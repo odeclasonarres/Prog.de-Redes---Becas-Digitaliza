@@ -49,15 +49,34 @@ from sys import path
 path.append('..\\modulos')
 ~~~
 
-##### Errores
-Para capturar errores usaremos excepciones. Tipos de excepciones
+##### Errores y excepciones
+Para capturar errores usaremos excepciones. 63 tipos de excepciones jerarquizadas. En caso de elegir se queda con la primera que encuentre que valga para ese caso(incluso si hay otras más concretas)----> Hay que poner las excepciones concretas antes que las más generales.
+
+Tipos de excepciones
 ~~~
 ZeroDivisionError: division by zero
 IndexError: list index out of range
 
 ~~~
 
-Try-catch
+Try-except
+~~~
+try:
+   :
+   :
+   :
+except:
+   :
+   :
+   :
 ~~~
 
+Manejar dos excepciones a la vez
+~~~
+try:
+   :
+   :
+except(exc1,exc2):
+   :
+   :
 ~~~
