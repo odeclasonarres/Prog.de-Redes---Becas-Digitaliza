@@ -136,11 +136,26 @@ text.find("texto")---> similar a index pero sin posibilidad de errores.
 list('texto')--->Crea una lista con los carácteres de texto como elementos.
 text.count('x')--->devuelve la cantidad de veces que está x en la cadena.
 text.capitalize()--->Pone la primera letra en mayúscula y el resto en minúsculas.
+text.startswith()--->
 text.endswith("")--->Devuelve True/False en función de si text acaba con el texto que le pasas
+text.isalnum()--->Devuelve True si solo hay letras y dígitos.
+text.isalpha()---> Si hay letras solo
+text.isdigit()---> Si hay dígitos solo
+text.islower()---> Si hay solo minúsculas
+text.isupper()---> Si solo hay mayúsculas
+text.isspace()---> Si solo hay espacios
+text.lower()---> cambia las mayúsculas a minúsculas.
+upper
+swapcase
+separador.join([lista de strings])
+text.lstrip(texto)--->Elimina de la cadena el texto, o los espacios en blanco si no hay parámetro, al principio de la la cadena.
+rstrip--->al final de la cadena.
+strip--->al principio y al final de la cadena.
+text.replace("original","cambio")
+rfind
+split
 
-
-
-
+title
 ~~~
 
 Pueden ser tratadas como listas en muchos casos:
