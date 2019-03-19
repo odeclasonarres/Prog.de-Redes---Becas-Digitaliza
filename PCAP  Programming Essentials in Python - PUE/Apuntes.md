@@ -174,3 +174,21 @@ text.insert(0,"a")
 ~~~
 text= "a"+text
 ~~~
+
+Comparaciones de strings  
+~~~
+Las mayúsculas son menores que las minúsculas
+~~~
+
+Ordenar strings
+~~~
+sorted(lista de strings)---->Crea una lista nueva y la ordena.
+lista de strings.sort()--->Ordena la ya existente
+~~~
+
+Castear numero a string y viceversa
+~~~
+str(numero)
+int(12)
+float(1.2)
+~~~
