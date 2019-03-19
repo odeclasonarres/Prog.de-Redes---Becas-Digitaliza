@@ -63,6 +63,9 @@ Se ofertan becas y vacantes con partners y clientes de CISCO:
 
 La mayoría de partners transmiten que las ofertas son recurrentes, por lo que recomiendan aplicar ahora de cara al presente y al futuro.
 
+![Conjunto de ofertas por ahora 19-03-2019](https://github.com/odeclasonarres/Prog.de-Redes---Becas-Digitaliza/blob/master/photo_2019-03-19_18-31-05.jpg)
+
+
 ## Certificados y Diplomas
 **Exámenes**:
   - 1ª semana de abril exámenes online de cada curso
@@ -73,10 +76,11 @@ La mayoría de partners transmiten que las ofertas son recurrentes, por lo que r
     - El examen se puede realizar en cualquier centro autorizado por [Pearson VUE](https://home.pearsonvue.com) 
   - PCAP: 51% de descuento para quienes obtentan, al menos, un 70% en el examen final(~125€ de precio final). 
     - 30 días, desde la realización del examen, para solicitar el voucher de descuento, el plazo para realizar el examen se indicará al recibirlo(3 meses por lo general).
-Descuentos nominativos e intransferibles.
+
+*Descuentos nominativos e intransferibles*.
 A lo largo de la semana que viene tendremos toda la información, con un pequeño manual.
 
-**Diploma*, otorgado a quien supere los 3 cursos técnicos y los 6 de softskills.
+**Diploma**, otorgado a quien supere los 3 cursos técnicos y los 6 de softskills.
 
 ## Eventos - Networking
 Útiles para el networking y conocer a las empresas que ofertan las prácticas y contratos.
