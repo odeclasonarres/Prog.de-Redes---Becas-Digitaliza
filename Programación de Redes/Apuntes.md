@@ -9,4 +9,12 @@ Orden de evaluación de operaciones aritméticas: PEMDAS.
   - Multiplication and Division
   - Addition and Subtraction
 
-##### 1.2.2.
+
+##### 1.2.6.
+~~~
+open(name, [mode])
+  mode:
+    -r: read, modo por defecto.
+    -w: write.
+    -a: append.
+~~~
