@@ -3,7 +3,7 @@
 ### 2.
 ### 3.
 
-### 4. Módulos, excepciones y strings
+### 4. MÓDULOS, EXCEPCIONES Y STRINGS
 ##### Importar módulos
 Para importar un módulo y usar sus entidades:
 ~~~
@@ -180,7 +180,7 @@ Comparaciones de strings
 Las mayúsculas son menores que las minúsculas
 ~~~
 
-Ordenar strings
+Ordenar listas de strings
 ~~~
 sorted(lista de strings)---->Crea una lista nueva y la ordena.
 lista de strings.sort()--->Ordena la ya existente
@@ -192,3 +192,93 @@ str(numero)
 int(12)
 float(1.2)
 ~~~
+
+**Comparar strings**: se determina comparando el primer carácter diferente. Cuando comparas dos cadenas de diferentes longitudes y la más corta es idéntica al comienzo de una más larga, la cadena más larga se considera mayor
+
+
+### 5. PROGRAMACIÓN ORIENTADA A OBJETOS
+##### Conceptos básicos
+Python: enfoque procesal y de objetos.
+
+##### Del enfoque procesal al objeto
+Encapsulamiento:
+  - `__nombre`: privado(sea un método o un atributo)
+
+Contructores:
+~~~
+def _init_(self): <---Contructor público
+
+def __init__(self): <---Constructor privado
+~~~
+##### Atributos
+Se pueden crear y añadir en el constructor o en cualquier momento de la vida del objeto(variables instancia) ---> Cada objeto de una clase puede tener atributos diferentes.
+
+Cada objeto tiene un diccionario(`__dict__`) en en el que recogen los nombres y valores de sus atributos.
+
+_Cómo se añaden atributos fuera del constructor_: Fijando el valor del nuevo atributo.
+  - Con un método en la propia clase. En este caso será un atributo de la clase(aunque no todos los objetos lo tengan)
+
+~~~
+def setAtributo(self,val=2):
+      self.atributoNuevo = val
+~~~
+  - Directamente
+~~~
+objeto.atributoNuevo=valor
+~~~
+
+*Variables de clase*: Variables comunes a todos los objetos de la clase
+
+
+*Comprobar la existencia de un atributo*
+
+El acceso a un atributo que no tiene un objeto concreto causa una excepción AttributeError .
+
+Función `hasattr(objeto,'nombreatributo')`: retorna un booleano. También puede operar en clases.
+
+
+##### Métodos
+Todos los métodos tienen que tener el parámetro self. En `_dict__` también están.
+
+`__module__` indica donde está definida una clase.
+
+*Introspección*: Capacidad de un programa para examinar el tipo o las propiedades de un objeto en tiempo de ejecución.
+
+*Reflexión*: Capacidad de un programa para manipular los valores, propiedades y / o funciones de un objeto en tiempo de ejecución.
+
+`__str__()`: sobreescribirlo
+
+##### Herencia
+La herencia es la práctica de pasar atributos y métodos de la superclase (definida y existente) a una clase recién creada, llamada subclase.
+
+En el constructor invocar explicitamente el constructor de la superclase
+~~~
+class SubClase(SuperClase):
+  def __init__(self):
+    SuperClase.__init__(self)
+    self.atributopropio=valor
+~~~
+
+Función `issubclas(subclase, superclase)`: booleano si se cumple la relación. Cada clse se considera subclase de si misma
+
+Función `isinstance(objeto, clase)`
+
+Operador `is`: si dos variables identifican al mismo objeto.
+
+Función `super())`
+
+*Herencia múltiple*:
+~~~
+class SubClase(SuperClase1, SuperClase2):
+~~~
+¿Conflicto entre nombres? la subclase se queda con la que esté primero en su definición
+
+*Composición*: proyecta una clase como un contenedor capaz de almacenar y usar otros objetos (derivados de otras clases) donde cada uno de los objetos implementa una parte del comportamiento de una clase deseada
+
+`__bases__`
+
+##### Excepciones
+
+##### Generadores y cierres
+
+##### Procesando archivos
