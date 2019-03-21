@@ -8,64 +8,97 @@ def bienvenida(op=1):
         p="GRACIAS, hasta la próxima".center(100,'.')
         print(p)
         sys.exit()
-#def seguir():
-#    op="¿Qué quieres hacer?"
-#    op+='\n\t1. Suma'
-#    op+='\n\t2. Resta'
-#    op+='\n\tIntroduce una cifra del 1 al 5 para escoger'
-#    op+='\n\t\t\t'
-#    op=int(input(op))
-#    if op==1:
-#        operar(datos())
-#    else:
-#        bienvenida()
-def datos():
-    p='\n'+'\n'+'Introduce las dos cifras'
-    print(p)
-    #Crear las sentencias necesarias para recoger dos números a través del terminal
-    n1=float(input("\tLa primera:  "))
-    n2=float(input("\tLa segunda:  "))
-    op="¿Qué operación quieres realizar?"
+
+def captura(txt,ty=0):
+    if ty==0:
+        retorno=float(input(txt))
+    else:
+        retorno=int(input(txt))
+    return retorno
+
+def seguir():
+    op="\n¿Qué quieres hacer?"
+    op+='\n\t1. Realizar una operación aritmética.'
+    op+='\n\t2. Salir del programa.'
+    op+='\n\Introduce una CIFRA del 1 al 2 para escoger: '
+    try:
+        op=captura(op,1)
+    except ValueError:
+        print("Has introducido un valor(texto o números decimales) erróneo")
+        seguir()
+    if op==1:
+        operar()
+    elif op==2:
+        bienvenida()
+    else:
+        print("Has elegido un valor numérico erróneo")
+        seguir()
+
+def suma(a,b):
+    return a+b
+def resta(a,b):
+    return a-b
+def multiplicacion(a,b):
+    return a*b
+def division(a,b):
+    return a/b
+def exponencial(a,b):
+    return a**b
+
+def operar():
+    resultado=0
+    op_aritmetica={1:suma, 2:resta, 3:multiplicacion, 4:division, 5:exponencial}
+    ciclos=[True,True]
+    op="\n¿Qué operación quieres realizar?"
     op+='\n\t1. Suma'
     op+='\n\t2. Resta'
     op+='\n\t3. Multiplicación'
     op+='\n\t4. División'
     op+='\n\t5. Exponencial'
-    op+='\n\tIntroduce una cifra del 1 al 5 para escoger'
-    op+='\n\t\t\t'
-    op=int(input(op))
-    dic={'op':op,'1':n1,'2':n2}
-    return dic
+    op+='\nIntroduce una cifra del 1 al 5 para escoger: '
+    try:
+        op=captura(op, 1)
+    except ValueError:
+        print("Has introducido un valor(texto o números decimales) erróneo")
+        operar()
+    if op>5 or op<1:
+        print("Has elegido un valor numérico erróneo")
+        operar()
+    else:
+        for elemento in op_aritmetica:
+            if op_aritmetica[elemento]==op:
+                print(("Has elegido la "+elemento).center(100))
+    print('\n'+'Introduce las dos cifras:')
+    n1="\t- La primera:  "
+    while ciclos[0]:
+        try:
+            n1=captura(n1,0)
+            ciclos[0]=False
+        except ValueError:
+            print("Has introducido un valor incorrecto(texto), vuelve a probar: ")
+            n1=""
+    n2="\t- La segunda:  "
+    while ciclos[1]:
+        try:
+            n2=captura(n2,0)
+        except ValueError:
+            print("Has introducido un valor incorrecto(texto), vuelve a probar: ")
+            n2=""
+        if op==4:
+            try:
+                assert n2
+                print("ggc")
+                ciclos[1]=False
+            except AssertionError:
+                print("Has introducido un valor incorrecto, no puedes dividir entre 0, vuelve a probar: ")
+                n2=""
+        else:
+            ciclos[1]=False
 
-def operar(dic):
-    resultado=0
-    #if dic.=="+":
-    #    resultado=n1+n2
-    #elif func=="*":
-    #    resultado=n1*n2
-    #elif func=="/":
-    #    resultado=n1/n2
-    #else:
-    #    resultado=n1**n2
-    #print("El resultado de "+(n1)+func+str(n2)+" es:
-    return resultado
+    operador=op_aritmetica.get(op)
+    resultado="{0:.3f}".format(operador(n1,n2))
+    print("El resultado de",str(n1),op,str(n2),"es: ",str(resultado))
 
 bienvenida(0)
-datos()
-#print(operar(datos())
-
-
-#Integrar funcionalidades de suma, multiplicación, división, y exponencial
-#func=input("Elige la operación: + * / ^ ")
-#resultado=0
-#Permitir escoger el modo de operación de forma manual
-#(el usuario ha de introducir un número para que sepa qué operación realizar)
-
-
-#Permitir escoger el modo de operación de forma manual
-#Realizar las operaciones e imprimir el valor por pantalla.
-#print("El resultado de "+str(n1)+func+str(n2)+" es: "+str(resultado))
-
-# Integrar funcionalidades de suma, resta, multiplicación, división, y exponencial
-# Implementar funciones, diccionarios, y excepciones
-#(el usuario ha de introducir un número para que sepa qué operación realizar)""
+while True:
+    seguir()
