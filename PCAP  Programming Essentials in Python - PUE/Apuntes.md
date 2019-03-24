@@ -7,6 +7,7 @@
 ##### Importar módulos
 Para importar un módulo y usar sus entidades:
 ~~~
+:::python
 import modulo
 print(modulo.entidad)
 ~~~
@@ -288,3 +289,82 @@ yield
 
 
 ##### Procesando archivos
+Superclase IOBase
+ - TextIOBase
+ - BufferedIOBase
+ - RawIOBase
+
+**Apertura de flujos**
+~~~
+steam = open(file, mode, encoding)
+~~~
+Tipos de mode:
+  - *r*: lectura. el archivo tiene que existir
+  - *w*: escritura. el archivo asociado con el flujo no necesita existir ; Si no existe se creará, si existe, se borrará lo anterior
+  - *a*: añadir. como escribir pero sin borrar lo que había previamente
+  - *r+*: leer y actualizar. el archivo asociado con el flujo debe existir y debe poder escribirse; de ​​lo contrario, la función open () genera una excepción.
+  - *w+*: escribir y actualizar. el archivo asociado con el flujo no necesita existir ; Si no existe se creará; El contenido anterior del archivo permanece intacto.
+  - *b*/*t* al final del modo: binario / texto. Si no se espeficica, por defecto es texto.
+
+
+**Flujos preabiertos**: importados del módulo sys.
+  - *sys.stdin*(entrada estándar): se asocia con el teclado, se abre antes de leer y se considera la fuente de datos principal para los programas en ejecución.
+  - *sys.stdout*(salida estándar): se asocia con la pantalla, antes de abrir para escritura, considerada como el objetivo principal para la salida de datos por el programa en ejecución
+  - *sys.stderr*(salida de error estándar): se asocia con la pantalla, antes de abrirla para escribir, y se considera el lugar principal donde el programa en ejecución debe enviar información sobre los errores encontrados durante su trabajo
+
+**Cierre de flujos**
+~~~
+stream.close()
+~~~
+genera una excepción IOError en caso de error
+
+**Diagnosticar problemas de flujo**
+El objeto IOError tiene un atributo errno que identifica el código de error.
+Hay muchas opciones de error, para facilitar el diagnóstico:
+  - `strerror()`: del módulo os. Al pasarle un código de error devuelve una cadena con el significado.
+
+**Archivos de texto**
+ - *Codificación del texto*: utf-8
+ - Son iterables
+ - *Leer carácteres del archivo*: read(cantidad). Lee la cantidad de caracteres que le pases, si no se le pasa nada, se lee entero. Si no hay nada que leer, devuelve cadena vacía.
+~~~
+try:
+      stream = open(file, "rt")
+      texto = stream.read()
+      stream.close()
+except IOError as e:
+      ...
+~~~
+ - *Leer filas del archivo*: readline(). Lee línea a línea del archivo.
+ - *Escribir*:
+~~~
+try:
+      stream = open(file,"wt")
+      stream.write("xxxxxxx")
+      stream.close()
+except IOError as e:
+      ...
+~~~
+
+**Archivos binarios**
+ - *bytearray*: una de las clases especializadas que Python utiliza para almacenar datos amorfos. Los datos amorfos son datos que no tienen una forma específica, son solo una serie de bytes. En el caso de los bytearray, enteros con valor entre 0 y 255.
+ - *Escribir bytes en el flujo*:write(bytearray que sea)
+~~~
+data=bytearray(10)
+try:
+	    bf = open('file.bin', 'wb')
+        bf.write(data)
+	    bf.close()
+except IOError as e:
+      ...
+~~~
+ - *Leer bytes del flujo*:readinto()
+~~~
+data = bytearray(10)
+try:
+	   bf = open('file.bin', 'rb')
+	   bf.readinto(data)
+	   bf.close()
+except IOError as e:
+     ...
+~~~
