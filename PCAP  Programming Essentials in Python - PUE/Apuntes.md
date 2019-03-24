@@ -278,7 +278,13 @@ class SubClase(SuperClase1, SuperClase2):
 `__bases__`
 
 ##### Excepciones
-
+try-except-else-finally
+~~~
+~~~
 ##### Generadores y cierres
+Un generador de Python es una pieza de código especializado capaz de producir una serie de valores y controlar el proceso de iteración.
+
+yield
+
 
 ##### Procesando archivos
