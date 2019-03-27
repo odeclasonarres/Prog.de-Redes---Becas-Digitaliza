@@ -56,3 +56,10 @@ JSON es un formato para almacenar e intercambiar texto entre un servidor y una a
 
 1.3.2.2: XML
 XML amplía la funcionalidad de HTML al permitir a los programadores web construir etiquetas personalizadas. M´as dificil de leer que JSON.
+
+#### 1.3.3 Parseando JSON con Python
+*Autenticación de una solicitud RESTful*
+ - Ninguna: La API es pública y cualquiera puede realizar la solicitud.
+ - HTTP básico: Un nombre de usuario y contraseña se pasan al servidor en un string codificado.
+ - Token: Con una clave secreta generalmente proporcionada por los desarrolladores de la API.
+ - Autorización abierta (OAuth): un estándar abierto para recuperar un token de acceso de un proveedor de identidad. El token se pasa con cada llamada a la API
