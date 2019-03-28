@@ -144,3 +144,61 @@ La parte del SO que interactúa directamente con el hardware de la computadora s
 **Modos del comando primario**: Como característica de seguridad, hay 2 modos de acceso de administración:
  - Modo de ejecución de usuario: Permite solo una cantidad limitada de comandos de monitoreo básicos, pero no permite la ejecución de ningún comando que podría cambiar la configuración del dispositivo. La petición de entrada en la terminal termina con el símbolo  `>`.
  - Modo de ejecución privilegiado: Permite acceso a todos los comandos y funciones. La petición de entrada que termina con el símbolo `#`.
+
+ Para pasar del modo usuario al modo con privilegios `enable`. A la inversa `disable`.
+
+ Para configurar el dispositivo, el usuario debe ingresar al modo de configuración global: `configure terminal`, para salir `exit`. En el modo de configuración global, el usuario puede ingresar a diferentes modos de subconfiguración. Cada uno de estos modos permite la configuración de una parte o función específica del dispositivo. Los dos tipos de modos de subconfiguración incluyen lo siguiente:
+- Modo de configuración de línea: se utiliza para configurar la consola, SSH, Telnet o el acceso auxiliar. `line console 0`
+- Modo de configuración de interfaz: se utiliza para configurar un puerto de switch o una interfaz de red de router. `interface`
+
+**Estructura básica de comandos de IOS**
+La sintaxis general es: comando seguido de palabras clave y argumentos.
+- Palabra clave: un parámetro específico que se define en el sistema operativo.
+- Argumento:valor definido por el usuario.
+
+*Funciones de ayuda*:
+- Ayuda contextual: `?` y te lista posibles comandos en ese contexto, o a medias de un comando y lo completa, al final y muestra argumentos y palabras clave.
+- Verificación de la sintaxis del comando
+
+### 2. Configuración básica de dispositivos
+**Nombres de host**
+Al configurar un dispositivo de red, uno de los primeros pasos es la configuración de un nombre único. Si el nombre del dispositivo no se configura explícitamente, Cisco IOS utiliza un nombre de dispositivo predeterminado de fábrica. Reglas de nombres:
+- Tienen que comenzar con una letra
+- Sin espacios
+- Solo letras(mayúsculas o minúsculas), dígitos y guiones(finalizando con letra o dígito)
+- Menos de 64 caracteres.
+~~~
+#Fijar el nombre
+configure terminal
+hostname nombre-Elegido
+
+#Eliminar el nombre
+no hostname
+~~~
+
+**Protección del acceso de los dispositivos**
+Todos los dispositivos de red deben tener acceso limitado
+[IMAGEN]
+- *Configuración de contraseñas*:
+  - Modo privilegiado: `enable secret contraseñaElegida`
+  - Modo usuario:
+  - Vty: Las líneas de terminal virtual (VTY) habilitan el acceso remoto al dispositivo.
+~~~
+#usuario
+configure terminal
+line console 0
+password contraseñaElegida
+login
+
+#Vty
+line vty 0 15
+password contraseñaElegida
+login
+~~~
+
+- *Cifrado de las contraseñas*: Los archivos startup-config y running-config muestran la mayoría de las contraseñas en texto no cifrado.
+  - `service password-encryption`:aplica un cifrado débil a todas las contraseñas no cifradas del archivo de configuración.
+  - `show running-config`: verificar que se han encriptado.
+
+- *Mensajes de aviso*:
+2.2.2.4.
