@@ -1,10 +1,11 @@
-### 0.
-### 1.
-### 2.
-### 3.
+#
+## 0.
+## 1.
+## 2.
+## 3.
 
-### 4. MÓDULOS, EXCEPCIONES Y STRINGS
-##### Importar módulos
+## 4. MÓDULOS, EXCEPCIONES Y STRINGS
+#### Importar módulos
 Para importar un módulo y usar sus entidades:
 ~~~
 :::python
@@ -46,14 +47,14 @@ import modulo
 dir(modulo)
 ~~~
 
-##### Módulos y paquetes
+#### Módulos y paquetes
 ¿Cómo convertir un conjunto de módulos jerarquizados en un paquete? Creando un archivo `__init.py__` en cualquiera de las carpetas del paquete. Además hay que añadirlo a las rutas en las que Python lo busca.
 ~~~
 from sys import path
 path.append('..\\modulos')
 ~~~
 
-##### Errores y excepciones
+#### Errores y excepciones
 Para capturar errores usaremos excepciones. 63 tipos de excepciones jerarquizadas. En caso de elegir se queda con la primera que encuentre que valga para ese caso(incluso si hay otras más concretas)----> Hay que poner las excepciones concretas antes que las más generales.
 
 Try-except
@@ -121,7 +122,7 @@ KeyboardInterrupt:el usuario interrumpe la ejecución con atajos de teclado.
     BaseException ← KeyboardInterrupt    
 ~~~
 
-##### Strings
+#### Strings
 ~~~
 len(cadena)--->devuelve la longitud, puede ser 0(vacía)
 \--->Caractecter de escape(para poner delante de ').
@@ -197,11 +198,11 @@ float(1.2)
 **Comparar strings**: se determina comparando el primer carácter diferente. Cuando comparas dos cadenas de diferentes longitudes y la más corta es idéntica al comienzo de una más larga, la cadena más larga se considera mayor
 
 
-### 5. PROGRAMACIÓN ORIENTADA A OBJETOS
-##### Conceptos básicos
+## 5. PROGRAMACIÓN ORIENTADA A OBJETOS
+#### Conceptos básicos
 Python: enfoque procesal y de objetos.
 
-##### Del enfoque procesal al objeto
+#### Del enfoque procesal al objeto
 Encapsulamiento:
   - `__nombre`: privado(sea un método o un atributo)
 
@@ -211,7 +212,7 @@ def _init_(self): <---Contructor público
 
 def __init__(self): <---Constructor privado
 ~~~
-##### Atributos
+#### Atributos
 Se pueden crear y añadir en el constructor o en cualquier momento de la vida del objeto(variables instancia) ---> Cada objeto de una clase puede tener atributos diferentes.
 
 Cada objeto tiene un diccionario(`__dict__`) en en el que recogen los nombres y valores de sus atributos.
@@ -237,8 +238,7 @@ El acceso a un atributo que no tiene un objeto concreto causa una excepción Att
 
 Función `hasattr(objeto,'nombreatributo')`: retorna un booleano. También puede operar en clases.
 
-
-##### Métodos
+#### Métodos
 Todos los métodos tienen que tener el parámetro self. En `_dict__` también están.
 
 `__module__` indica donde está definida una clase.
@@ -249,7 +249,7 @@ Todos los métodos tienen que tener el parámetro self. En `_dict__` también es
 
 `__str__()`: sobreescribirlo
 
-##### Herencia
+#### Herencia
 La herencia es la práctica de pasar atributos y métodos de la superclase (definida y existente) a una clase recién creada, llamada subclase.
 
 En el constructor invocar explicitamente el constructor de la superclase

@@ -63,3 +63,16 @@ XML amplía la funcionalidad de HTML al permitir a los programadores web constru
  - HTTP básico: Un nombre de usuario y contraseña se pasan al servidor en un string codificado.
  - Token: Con una clave secreta generalmente proporcionada por los desarrolladores de la API.
  - Autorización abierta (OAuth): un estándar abierto para recuperar un token de acceso de un proveedor de identidad. El token se pasa con cada llamada a la API
+
+
+## 2. PROGRAMANDO APIC-EM
+### 2.1. Programabilidad de red
+Con los dispositivos de red con los que estamos familiarizados, puede pensar que un enrutador o conmutador es un dispositivo único. Sin embargo, las funciones principales de estos dispositivos se pueden dividir en dos planos:
+- **Plano de control**: Toma decisiones de reenvío. El plano de control contiene los mecanismos de reenvío de rutas de Capa 2 y Capa 3. La información enviada al plano de control es procesada por la CPU.
+- **Plano de datos**: también llamado plano de reenvío, este plano se usa para reenviar flujos de tráfico. Los enrutadores y conmutadores utilizan la información del plano de control para reenviar el tráfico entrante a través de la interfaz de egreso apropiada.
+
+Al separar el plano de control y el plano de datos, los programadores de red pueden centralizar la información que utilizan los dispositivos para tomar decisiones de reenvío y realizar otras funciones.
+
+En las redes SDN, el plano de control está centralizado en un controlador SDN, una entidad lógica que permite a los administradores de red administrar y dictar cómo debe manejar el plano de datos de enrutadores y conmutadores tráfico de red. SDN utiliza el protocolo OpenFlow para comunicarse entre el controlador y los dispositivos de red.
+
+[IMAGEN]
