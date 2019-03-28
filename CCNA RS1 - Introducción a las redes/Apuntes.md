@@ -122,6 +122,14 @@ la seguridad debe implementarse en varias capas, y debe utilizarse más de una s
 ###### Arquitectura de red
 La arquitectura de red se refiere a los dispositivos, las conexiones y los productos que se integran para admitir las tecnologías y aplicaciones necesarias.
 
+
+
+
+
+
+
+
+
 ## 2. Configuración de un sistema operativo de red
 El Sistema operativo Internetwork (IOS) de Cisco es un término genérico para la colección de sistemas operativos de red que se utilizan en los dispositivos de red Cisco. Cisco IOS se utiliza en la mayoría de los dispositivos Cisco, independientemente del tamaño o el tipo de dispositivo. Este curso se centrará principalmente en Cisco IOS, versión 15.x.
 
