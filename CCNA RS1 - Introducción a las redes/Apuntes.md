@@ -167,6 +167,7 @@ Al configurar un dispositivo de red, uno de los primeros pasos es la configuraci
 - Sin espacios
 - Solo letras(mayúsculas o minúsculas), dígitos y guiones(finalizando con letra o dígito)
 - Menos de 64 caracteres.
+
 ~~~
 #Fijar el nombre
 configure terminal
@@ -178,11 +179,13 @@ no hostname
 
 **Protección del acceso de los dispositivos**
 Todos los dispositivos de red deben tener acceso limitado
+
 [IMAGEN]
 - *Configuración de contraseñas*:
   - Modo privilegiado: `enable secret contraseñaElegida`
-  - Modo usuario:
+  - Modo usuario
   - Vty: Las líneas de terminal virtual (VTY) habilitan el acceso remoto al dispositivo.
+
 ~~~
 #usuario
 configure terminal
@@ -200,5 +203,11 @@ login
   - `service password-encryption`:aplica un cifrado débil a todas las contraseñas no cifradas del archivo de configuración.
   - `show running-config`: verificar que se han encriptado.
 
-- *Mensajes de aviso*:
-2.2.2.4.
+- *Mensajes de aviso*: Comando de configuración global `banner motd # mensaje del día #`.
+
+
+**Guardar configuración**
+- *Guardar el archivo de configuración en ejecución*: Existen dos archivos de sistema que almacenan la configuración de dispositivos.
+  - *startup-config*: almacenado en la NVRAM, contiene todos los comandos que utilizará el dispositivo durante el inicio o reinicio. La memoria NVRAM no pierde su contenido cuando el dispositivo se desconecta. `show startup-config`
+  - *running-config*: almacenado en la RAM, refleja la configuración actual. La modificación de una configuración en ejecución afecta al funcionamiento de inmediato. Pierde todo el contenido cuando el dispositivo se apaga o se reinicia. `show running-config `
+  - `copy running-config startup-config`
