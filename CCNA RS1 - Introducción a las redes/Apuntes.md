@@ -211,3 +211,17 @@ login
   - *startup-config*: almacenado en la NVRAM, contiene todos los comandos que utilizará el dispositivo durante el inicio o reinicio. La memoria NVRAM no pierde su contenido cuando el dispositivo se desconecta. `show startup-config`
   - *running-config*: almacenado en la RAM, refleja la configuración actual. La modificación de una configuración en ejecución afecta al funcionamiento de inmediato. Pierde todo el contenido cuando el dispositivo se apaga o se reinicia. `show running-config `
   - `copy running-config startup-config`
+
+### 3. Esquemas de direcciones
+**Puertos y direcciones**
+  - *Direcciones IP*:
+  - *Interfaces y puertos*:
+
+**Configurar direccionamiento IP**
+  - *Configuración manual*: Para que un terminal se comunique a través de la red, se debe configurar con una dirección IPv4 y una máscara de subred únicas. La información de dirección IP se puede introducir en los terminales en forma manual o automáticamente mediante el Protocolo de configuración dinámica de host (DHCP).
+  - *Configuración automática*: En una red, DHCP permite la configuración automática de direcciones IPv4 para cada terminal con DHCP habilitado.
+  - *Configuración de la interfaz virtual de switch*: Para acceder al switch de manera remota, se deben configurar una dirección IP y una máscara de subred en la SVI. Para configurar una SVI en un switch, utilice el comando de configuración global `interface vlan 1`. Después asigna una dirección IPv4: `ip-address subnet-mask` para la configuración de interfaz. Finalmente, habilite la interfaz virtual con `no shutdown`.
+
+**Verificación de la conectividad**
+Del mismo modo que se usan comandos y utilidades como ipconfig para verificar la configuración de red de un host de PC, se deben utilizar los comandos para verificar los ajustes de interfaces y dirección de los dispositivos intermediarios, como switches y routers.
+`show ip interface brief`
