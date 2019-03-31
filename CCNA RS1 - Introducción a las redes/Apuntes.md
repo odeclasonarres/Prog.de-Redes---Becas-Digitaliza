@@ -296,4 +296,61 @@ Grupo de protocolos interrelacionados--->suite de protocolos; se muestran en cap
   - *Transporte*: Admite la comunicaciónentre dispositivos
   - *Internet*: Determina el mejor camino a través de una red
   - *Acceso a la red*: Controla los dispositivos del hardware y los medios que forman parte de la red.
-  
+
+*Comparación entre el modelo OSI y el modelo TCP/IP*
+Los protocolos que forman la suite TCP/IP pueden describirse en términos del modelo de referencia OSI. En el OSI, la capa de acceso a la red y la capa de aplicación del modelo TCP/IP están subdivididas para describir funciones discretas que deben producirse en estas capas.
+
+En la capa de acceso a la red, la suite de protocolos TCP/IP no especifica cuáles protocolos utilizar cuando se transmite por un medio físico; solo describe la transferencia desde la capa de Internet a los protocolos de red física. Las capas OSI 1 y 2 tratan los procedimientos necesarios para acceder a los medios y las maneras físicas de enviar datos por la red.
+
+La capa OSI 3, la capa de red, asigna directamente a la capa de Internet TCP/IP. Esta capa se utiliza para describir protocolos que abordan y dirigen mensajes a través de una internetwork.
+
+La capa OSI 4, la capa de transporte, asigna directamente a la capa de transporte TCP/IP. Esta capa describe los servicios y las funciones generales que proporcionan la entrega ordenada y confiable de datos entre los hosts de origen y de destino.
+
+La capa de aplicación TCP/IP incluye un número de protocolos que proporciona funcionalidad específica a una variedad de aplicaciones de usuario final. Las capas 5, 6 y 7 del modelo OSI se utilizan como referencias para proveedores y desarrolladores de software de aplicación para fabricar productos que funcionan en redes.
+
+Tanto el modelo TCP/IP como el modelo OSI se utilizan comúnmente en la referencia a protocolos en varias capas. Dado que el modelo OSI separa la capa de enlace de datos de la capa física, se suele utilizan cuando se refiere a esas capas inferiores.
+
+
+### 3. Transferencia de datos en la red
+**Encapsulamiento de datos**
+*Segmentación del mensaje*: La división del flujo de datos en partes más pequeñas se denomina segmentación. Beneficios:
+  - Se pueden intercalar diversas conversaciones en la red(multiplexión).
+  - Si parte del mensaje no logra llegar al destino, solo se deben retransmitir las partes faltantes.
+Desventaja: nivel de complejidad que se agrega al proceso.
+
+*Unidades de datos de protocolo*. En TCP/IP
+  - Datos: Capa de aplicación
+  - Segmento: Capa de transporte
+  - Paquete: Capa de red
+  - Marco: Capa de enlace
+  - Bits: Capa física
+
+**Acceso a los datos**
+*Direcciones de red*
+La capa de red y la capa de enlace de datos son responsables de enviar los datos desde el dispositivo de origen o emisor hasta el dispositivo de destino o receptor.
+- Direcciones de origen y de destino de la capa de red: responsables de enviar el paquete IP desde el dispositivo de origen hasta el dispositivo final.
+- Direcciones de origen y de destino de la capa de enlace de datos: responsables de enviar la trama de enlace de datos desde una tarjeta de interfaz de red(NIC) a otra en la misma red.
+
+*Direcciones de enlaces de datos*
+La dirección física de la capa de enlace de datos tiene el propósito de enviar la trama de enlace de datos desde una interfaz de red hasta otra interfaz de red en la misma red.
+- Dirección de enlace de datos de origen: la dirección física de la NIC del dispositivo que envía la trama de enlace de datos.
+- Dirección de enlace de datos de destino: la dirección física de la NIC que recibe la trama de enlace de datos. Esta dirección es el router del salto siguiente o el dispositivo de destino final.
+
+*Dispositivos en la misma red*
+
+*Dispositivos en una red remota*
+
+### 4. Conclusiones
+Las redes de datos son sistemas de terminales, dispositivos intermediarios y medios que conectan los dispositivos. Para que se produzca la comunicación, los dispositivos deben saber cómo comunicarse.
+
+Estos dispositivos deben cumplir con reglas y protocolos de comunicación. TCP/IP es un ejemplo de una suite de protocolos. La mayoría de los protocolos son creados por organizaciones de estandarización, como el IETF o el IEEE. El Instituto de Ingenieros en Electricidad y Electrónica es una organización profesional para las personas que trabajan en los campos de la electrónica y de la ingeniería eléctrica. La ISO, Organización Internacional de Normalización, es el mayor desarrollador del mundo de estándares internacionales para una amplia variedad de productos y servicios.
+
+Los modelos de red más ampliamente utilizados son OSI y TCP/IP. Asociar los protocolos que establecen las reglas de las comunicaciones de datos con las distintas capas es de gran utilidad para determinar qué dispositivos y servicios se aplican en puntos específicos mientras los datos pasan a través de las redes LAN y WAN.
+
+Los datos que pasan por la pila del modelo OSI se segmentan en partes y se encapsulan con direcciones y otras etiquetas. El proceso se revierte a medida que las partes se desencapsulan y pasan hacia la pila del protocolo de destino. El modelo OSI describe los procesos de codificación, formateo, segmentación y encapsulamiento de datos para transmitir por la red.
+
+La suite de protocolos TCP/IP es un protocolo de estándar abierto que recibió el aval del sector de redes y fue ratificado, o aprobado, por una organización de estandarización. La suite de protocolos de Internet es una suite de protocolos necesaria para transmitir y recibir información mediante Internet.
+
+Las unidades de datos del protocolo (PDU) se denominan según los protocolos de la suite TCP/IP: datos, segmento, paquete, trama y bits.
+
+La aplicación de los modelos permite a las distintas personas, empresas y asociaciones comerciales analizar las redes actuales y planificar las redes del futuro.
