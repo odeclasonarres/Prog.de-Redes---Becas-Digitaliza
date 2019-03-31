@@ -225,3 +225,75 @@ login
 **Verificación de la conectividad**
 Del mismo modo que se usan comandos y utilidades como ipconfig para verificar la configuración de red de un host de PC, se deben utilizar los comandos para verificar los ajustes de interfaces y dirección de los dispositivos intermediarios, como switches y routers.
 `show ip interface brief`
+
+
+### 4. Conclusiones
+**Capítulo 2: Configuración de un sistema operativo de red**
+Cisco IOS es un término que abarca diferentes sistemas operativos que se ejecutan en diversos dispositivos de redes. El técnico puede introducir comandos para configurar o programar el dispositivo a fin de que lleve a cabo diversas funciones de redes. Los routers y switches Cisco IOS realizan funciones de las cuales dependen los profesionales de red para hacer que sus redes funcionen de la forma esperada.
+
+Se accede a los servicios que proporciona Cisco IOS mediante una interfaz de línea de comandos (CLI), a la que se accede a través del puerto de consola, el puerto auxiliar o mediante Telnet o SSH. Una vez que se conectan a la CLI, los técnicos de red pueden realizar cambios de configuración en los dispositivos Cisco IOS. Cisco IOS está diseñado como sistema operativo modal, esto significa que los técnicos de red deben navegar a través de diversos modos jerárquicos del IOS. Cada modo admite distintos comandos del IOS.
+
+Los routers y switches Cisco IOS admiten sistemas operativos modales y estructuras de comandos similares, así como muchos de los mismos comandos. Además, los pasos de configuración inicial durante su implementación en una red son idénticos para ambos dispositivos.
+
+En este capítulo, se presentó Cisco IOS. Se explicaron los diversos modos de Cisco IOS en detalle y se analizó la estructura básica de comandos que se utiliza para configurarlo. También se exploró la configuración inicial de los dispositivos de switch Cisco IOS, que incluye la configuración de un nombre, la limitación del acceso a la configuración de dispositivos, la configuración de mensajes de aviso y el guardado de la configuración.
+
+En el capítulo siguiente, se analiza cómo se desplazan los paquetes a través de la infraestructura de red y se presentan las reglas de comunicación de paquetes.
+
+
+
+
+
+## Capítulo 3: Protocolos y comunicaciones de red
+### 1. Reglas de la comunicación
+**Reglas**
+  - *Aspectos básicos de la comunicación*: Reglas-->Protocolos; específicos de cada tipo de comunicación. Elementos de la comunicación:
+    - Emisor
+    - Receptor
+    - Mensaje
+  - *Requisitos de los protocolos informáticos comunes*:
+    - *Codificación de los mensajes*: Proceso mediante el cual la información se convierte en otra forma aceptable para la transmisión. La decodificación revierte este proceso para interpretar la idea.
+    - *Formato y encapsulamiento de los mensajes*:  Los formatos de los mensajes dependen del tipo de mensaje y el canal que se utilice para entregar el mensaje. El proceso que consiste en colocar un formato de mensaje (mensaje encapsulado) dentro de otro formato de mensaje (trama) se denomina encapsulamiento.
+    - *Tamaño del mensajes*: Las reglas que controlan el tamaño de las partes,que se comunican a través de la red, son muy estrictas. Las tramas que son demasiado largas o demasiado cortas no se entregan, lo que requiere que el host de origen divida un mensaje largo en fragmentos individuales que cumplan los requisitos y que contendrán una parte del mensaje original y su propia información de direccionamiento.
+    - *Sincronización del mensaje*:
+      - Método de acceso: El método de acceso determina en qué momento alguien puede enviar un mensaje.
+      - Control de flujo: Cantidad y velocidad de información que se puede enviar.
+      - Tiempo de espera para la respuesta: Cuánto tiempo esperar y qué hacer si se agota el tiempo de espera.
+    - *Opciones de entrega del mensaje*: Método de difusión(unidifusión, multififusión y transmisión) y acuse de recibo.
+
+### 2. Protocolos y estándares de red
+**Protocolos**
+Grupo de protocolos interrelacionados--->suite de protocolos; se muestran en capas, el nivel superior depende de la funcionalidad definida por los niveles inferiores.    
+
+*Protocolos de red*: definen un formato y un conjunto de reglas comunes para intercambiar mensajes entre dispositivos.
+
+*Interacción de protocolos*
+  - HTTP: define el contenido y el formato de las solicitudes y respuestas intercambiadas entre el cliente y el servidor.
+   - TCP: divide los mensajes HTTP en “segmentos” y es responsable de controlar tamaño e intervalos a los que se intercambian mensajes entre servidor y cliente.
+   - IP: tomar los segmentos formateados del TCP, los encapsula en paquetes, asigna direcciones y selecciona la mejor ruta al host de destino.
+   - Ethernet: dos funciones principales: la comunicación a través de un enlace de datos y la transmisión física de datos en los medios de red. Los protocolos de acceso a la red son responsables de tomar los paquetes de IP y los formatean para transmitirlos por los medios.
+
+*Suites de protocolos y estándares del sector*
+  - *TCP/IP*. os protocolos TCP/IP son específicos de las capas Aplicación, Transporte e Internet.
+[IMAGEN]
+
+*Organizaciones de estandarización*
+  - Estándares abiertos: Las organizaciones de estandarización son importantes para mantener una Internet abierta con especificaciones y protocolos de libre acceso que pueda implementar cualquier proveedor.
+  -
+
+**Modelos de referencia**
+[IMAGEN]
+- *Modelo de referencia OSI*: este tipo de modelo es coherente con todos los tipos de servicios y protocolos de red al describir qué es lo que se debe hacer en una capa determinada, pero sin regir la forma en que se debe lograr. El modelo OSI proporciona una amplia lista de funciones y servicios que se pueden presentar en cada capa. También describe la interacción de cada capa con las capas directamente por encima y por debajo de él.
+  1. *Física*: Describe los medios físicos, funcionales y de procedimiento para mantener la conexión física,
+  2. *Enlace de datos*: Describe los métodos para el intercambio de tramas entre dispositivos.
+  3. *Red*: Servicios para intercambiar datos individuales entre dispositivos identificados.
+  4. *Transporte*: Servicios para segmentar, transferir y reensamblar los datos para conexiones individuales.
+  5. *Sesión*: Organiza el diálogo y administra el intercambio de datos.
+  6. *Presentación*: Proporciona una representación común de datos transferidos
+  7. *Aplicación*: Comunicaciones proceso a proceso
+
+- *Modelo de protocolo TCP/IP*: este tipo de modelo coincide con precisión con la estructura de una suite de protocolos determinada. El modelo TCP/IP es un protocolo modelo porque describe las funciones que ocurren en cada capa de protocolos dentro de una suite de TCP/IP. TCP/IP también es un ejemplo de un modelo de referencia. Define cuatro categorías de funciones que deben ocurrir para que las comunicaciones se lleven a cabo correctamente.
+  - *Aplicación*: Representa datos para el usuario más el control de cdificación y de diálogo.
+  - *Transporte*: Admite la comunicaciónentre dispositivos
+  - *Internet*: Determina el mejor camino a través de una red
+  - *Acceso a la red*: Controla los dispositivos del hardware y los medios que forman parte de la red.
+  
