@@ -105,3 +105,34 @@ APIC-EM es un controlador SDN que tiene las siguientes características:
 - Proporciona un punto único para la automatización y el control de toda la red.
 
 [Access the APIC-EM sandbox environments hosted](https://DevNetSBX-NetAcad-APICEM-3.cisco.com)
+
+[IMG 1]
+[IMG 2]
+*Página de inicio*
+
+
+### 2.2 Programando la REST API APIC-EM
+#### 2.2.1 REST API
+REST es una forma estandarizada de conexión entre sistemas. Usa los métodos de HTTP y el transporte sin estado para hacer POST y PUT con los datos y peticiones a una API, y recibir respuestas GET de la misma. Las API REST tienen las siguientes características:
+  - Usan métodos del protocolo HTTP.
+  - Los endpoints API existen como procesos del servidor a las que se accede a través de URIs.
+  - Las páginas presentan datos y funcionalidad en una interacción humano-maquina guiada por el usuario.
+  - Las APIs presentan datos y funcionalidad en una interacción máquina-máquina guiada por software.
+
+*Elementos de una solicitud REST*:
+  - Método: GET, POST, PUT, DELETE
+  - URL: http://{APIC-EMController}/api/v1/host
+  - Autentificación: HTTP básico, OAuth, ninguno, personalizado...
+  - Cabeceras: HTTP, JSON
+  - Cuerpo de solicitud: JSON, XML.
+
+*Elementos de una respuesta REST*:
+  - Código de estado HTTP: 200 OK, 201 Created, 401-403 Authorization error, 404 Resource not found, 500 Internal Error-
+  - Cabeceras.
+  - Cuerpo: JSON, XML
+
+**Autenticación con APIC-EM**
+APIC-EM uses Token for authentication management. The APIC-EM calls this token a service ticket. In the first lab, you will use Postman to request a service ticket by supplying the username and password, as shown in the figure.  After the token (service ticket) is received, it is used instead of account credentials. APIC-EM service tickets timeout, so they must be repeatedly requested..
+
+
+"serviceTicket":"ST-134-IKtZqzIgBfk1gNkjQVHb-cas"
